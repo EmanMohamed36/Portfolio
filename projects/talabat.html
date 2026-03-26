@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Talabat System</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<script src="https://kit.fontawesome.com/f8ddfd3912.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+/* تعويض navbar الثابت */
+body {
+    padding-top: 80px; /* ارتفاع navbar */
+}
+
+/* جومبوتورن */
+.jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: #8aa5cf;
+    text-align: center;
+}
+
+/* section spacing */
+section {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+/* الصور */
+
+.img-medium {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.img-medium:hover {
+    transform: scale(1.08);
+}
+
+/* تحسين شكل الأسهم */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+/* تكبير مساحة الزر */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+/* Modal */
+.modal-content {
+    background: transparent;
+    border: none;
+}
+
+#modalImage {
+    max-height: 80vh;
+    border-radius: 15px;
+}
+.icon a{
+margin:10px;
+font-size:25px;
+color:#333;
+}
+
+.icon a:hover{
+color:#0d6efd;
+}
+/* footer */
+footer {
+    background-color: #0d6efd;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+</style>
+</head>
+
+<body id="home">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-warning shadow fixed-top">
+  <div class="container">
+    <a class="navbar-brand">Eman Mohamed</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="../index.html#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link active" href="../index.html#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- JUMBOTRON -->
+<section class="jumbotron">
+  <h1 class="display-4">Talabat System</h1>
+  <p class="lead">
+    Designed a scalable food ordering platform with role-based authentication
+         <br> and real-time order tracking.
+  </p>
+  <div class="icon">
+
+    <a href="https://github.com/EmanMohamed36/Talabat-System">
+    <i class="fa-brands fa-github"></i>
+    </a>
+
+    <a href="https://talabatsystem.runasp.net/api/Products">
+    <i class="fa-solid fa-cloud"></i>
+    </a>
+
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#ffffff" fill-opacity="1"
+    d="M0,32L26.7,58.7C53.3,85,107,139,160,138.7C213.3,139,267,85,320,85.3C373.3,85,427,139,480,160C533.3,181,587,171,640,192C693.3,213,747,267,800,240C853.3,213,907,107,960,64C1013.3,21,1067,43,1120,69.3C1173.3,96,1227,128,1280,117.3C1333.3,107,1387,53,1413,26.7L1440,0L1440,320L0,320Z">
+    </path>
+  </svg>
+</section>
+
+<!-- PROJECT DETAILS -->
+<section id="projects">
+  <div class="container">
+    
+    <div class="row justify-content-center fs-5 text-center">
+      <div class="col-md-8">
+
+
+        <h2>Technologies:</h2>
+        <ul class="text-start">
+          <li>ASP.NET Core Web API</li>
+          <li>Entity Framework Core</li>
+          <li>Angular</li>
+          <li>SQL Server</li>
+          <li>JWT Authentication</li>
+          <li>Union Architecture</li>
+
+        </ul>
+
+       <h5 class="mb-4">Screenshots:</h5>
+
+      <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+        
+        <div class="carousel-inner text-center">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+              <img src="../img/TalabatSystemImg/WhatsApp Image 2025-12-02 at 7.13.13 AM.jpeg"
+                class="img-medium"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                onclick="showImage(this.src)">
+              <img src="../img/TalabatSystemImg/WhatsApp Image 2025-12-02 at 7.13.53 AM.jpeg"
+                class="img-medium"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                onclick="showImage(this.src)">
+               
+            </div>
+          </div>
+
+          <!-- Slide 2 (لو عندك صور تانية) -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+              <img src="../img/TalabatSystemImg/WhatsApp Image 2025-12-02 at 7.14.39 AM.jpeg"
+                 class="img-medium"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                onclick="showImage(this.src)">
+              <img src="../img/TalabatSystemImg/WhatsApp Image 2025-12-02 at 7.15.13 AM.jpeg"
+                   class="img-medium"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                onclick="showImage(this.src)">
+            </div>
+          </div>
+
+          <!-- Slide 3 (لو عندك صور تانية) -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+              <img src="../img/TalabatSystemImg/WhatsApp Image 2025-12-02 at 7.15.45 AM.jpeg"
+                 class="img-medium"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                onclick="showImage(this.src)">
+              <img src="../img/TalabatSystemImg/WhatsApp Image 2025-12-02 at 7.16.16 AM.jpeg"
+                   class="img-medium"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                onclick="showImage(this.src)">
+            </div>
+          </div>
+          <!-- Slide 4 (لو عندك صور تانية) -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+              <img src="../img/TalabatSystemImg/WhatsApp Image 2025-12-02 at 7.16.55 AM.jpeg"
+                 class="img-medium"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                onclick="showImage(this.src)">
+              <img src="../img/TalabatSystemImg/WhatsApp Image 2025-12-02 at 7.17.14 AM.jpeg"
+                   class="img-medium"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                onclick="showImage(this.src)">
+            </div>
+          </div>
+          <!-- Slide 5 (لو عندك صور تانية) -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+              <img src="../img/TalabatSystemImg/WhatsApp Image 2025-12-02 at 7.17.39 AM.jpeg"
+                 class="img-medium"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                onclick="showImage(this.src)">
+              <img src="../img/TalabatSystemImg/WhatsApp Image 2025-12-02 at 7.18.10 AM.jpeg"
+                   class="img-medium"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                onclick="showImage(this.src)">
+            </div>
+          </div>
+          <!-- Slide 6 (لو عندك صور تانية) -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+              <img src="../img/TalabatSystemImg/WhatsApp Image 2025-12-02 at 7.18.34 AM.jpeg"
+                 class="img-medium"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                onclick="showImage(this.src)">
+              <img src="../img/TalabatSystemImg/WhatsApp Image 2025-12-02 at 7.18.57 AM.jpeg"
+                   class="img-medium"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                onclick="showImage(this.src)">
+            </div>
+          </div>
+          <!-- Slide 7 (لو عندك صور تانية) -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+              <img src="../img/TalabatSystemImg/WhatsApp Image 2025-12-02 at 7.19.52 AM.jpeg"
+                 class="img-medium"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                onclick="showImage(this.src)">
+              <img src="../img/TalabatSystemImg/WhatsApp Image 2025-12-02 at 7.20.27 AM.jpeg"
+                   class="img-medium"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                onclick="showImage(this.src)">
+            </div>
+          </div>
+          <!-- Slide 8 (لو عندك صور تانية) -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+              <img src="../img/TalabatSystemImg/WhatsApp Image 2025-12-02 at 7.20.43 AM.jpeg"
+                 class="img-medium"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                onclick="showImage(this.src)">
+              <img src="../img/TalabatSystemImg/WhatsApp Image 2025-12-02 at 7.21.03 AM.jpeg"
+                   class="img-medium"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                onclick="showImage(this.src)">
+            </div>
+          </div>
+           <!-- Slide 8 (لو عندك صور تانية) -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+              <img src="../img/TalabatSystemImg/WhatsApp Image 2025-12-02 at 7.21.24 AM.jpeg"
+                 class="img-medium"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                onclick="showImage(this.src)">
+              <img src="../img/TalabatSystemImg/WhatsApp Image 2025-12-02 at 7.22.13 AM.jpeg"
+                   class="img-medium"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                onclick="showImage(this.src)">
+            </div>
+          </div>
+
+  </div>
+
+        <!-- سهم شمال -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <!-- سهم يمين -->
+        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+
+      </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2022 Eman Mohamed</p>
+</footer>
+
+<div class="modal fade" id="imageModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <img id="modalImage" src="" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+function showImage(src) {
+    document.getElementById("modalImage").src = src;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+.jumbotron{
+padding-top:6rem;
+background-color:#8aa5cf;
+}
+
+#projects{
+background-color:#8aa5cf;
+}
+
+section{
+padding-top:5rem;
+padding-bottom:3rem;
+}
+
+.rounded-circle{
+border-radius:50%;
+}
+
+.card{
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+.icon a{
+margin:10px;
+font-size:25px;
+color:#333;
+}
+
+.icon a:hover{
+color:#0d6efd;
+}
